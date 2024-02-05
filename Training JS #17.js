@@ -77,7 +77,7 @@ function firstToLast(str, c) {
 
   let difference = lastIndex - firstIndex;
 
-  if (difference === -1) {
+  if (lastIndex === -1 && firstIndex >= 0) {
     return 0;
   } else if (firstIndex === -1 && lastIndex === -1) {
     return -1;
