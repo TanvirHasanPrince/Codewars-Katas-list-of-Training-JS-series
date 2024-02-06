@@ -97,3 +97,13 @@ function fiveLine(s) {
 
   return result;
 }
+
+//Another Method
+function fiveLine(s) {
+  s = s.trim(); // Remove leading and trailing whitespace
+  let result = "";
+  for (let i = 1; i <= 5; i++) {
+    result += `${s.repeat(i)}\n`;
+  }
+  return result.trim(); // Remove trailing newline
+}
